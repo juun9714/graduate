@@ -8,6 +8,9 @@ In the project directory, you can run:
 
 ### `npm start`
 
+git clone 받고 난 직후에, npm start 안먹히면 npm install 해주기.
+-> gitignore에 node_modules가 있어서 그럼
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
