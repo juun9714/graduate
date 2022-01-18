@@ -1,4 +1,4 @@
-import "../static/style_main.css";
+import "../public/style_main.css";
 import '../App.css';
 import React, { Component } from 'react';
 

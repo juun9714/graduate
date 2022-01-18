@@ -1,5 +1,5 @@
 import '../App.css';
-import "../static/style_main.css";
+import "../public/style_main.css";
 import React, { Component } from 'react';
 
 class Main extends Component {

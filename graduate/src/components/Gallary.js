@@ -22,6 +22,13 @@ class Gallary extends Component {
                         return(<Pict key={id} className="item" index={a}></Pict>)
                     })
                 }
+
+                {
+                    this.state.index.map(function(a,id){
+                        console.log(a)
+                        return(<Pict key={id} className="item" index={a}></Pict>)
+                    })
+                }
             </div>
         );
     }
