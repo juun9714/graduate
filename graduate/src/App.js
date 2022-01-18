@@ -31,7 +31,7 @@ class App extends Component {
       <div className="App">
         <h1>2021 Graduation Exhibition</h1>
         <div>
-          <h4><a href="/" onClick={function(e){
+          <h4 className='menu'><a href="/" onClick={function(e){
             console.log("Onclick event of MAIN")
             e.preventDefault();
             if(this.state.mode==="main"){
@@ -46,7 +46,7 @@ class App extends Component {
             }
           }.bind(this)}>MAIN</a></h4>
 
-          <h4><a href="/" onClick={function(e){
+          <h4 className='menu'><a href="/" onClick={function(e){
             console.log("Onclick event of GALLARY")
             e.preventDefault();
             if(this.state.mode==="gallary"){
@@ -61,7 +61,7 @@ class App extends Component {
             }
           }.bind(this)}>GALLARY</a></h4>
 
-          <h4><a href="/" onClick={function(e){
+          <h4 className='menu'><a href="/" onClick={function(e){
             console.log("Onclick event of COMMENT")
             e.preventDefault();
             if(this.state.mode==="comment"){

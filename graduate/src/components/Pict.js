@@ -15,17 +15,21 @@ class Pict extends Component {
 
     render() {
         var pict=null
-        //var pic_title=null
-        if(this.props.index===1)
-            pict=<img id="picts" alt="" src={require("../public/images/gal1.jpg")}></img>
-        else if (this.props.index===2)
-            pict=<img id="picts" alt="" src={require("../public/images/gal2.jpg")}></img>
-        else if (this.props.index===3)
-            pict=<img id="picts" alt="" src={require("../public/images/gal3.jpg")}></img>
-
+        var pict_tit=null
+        if(this.props.index===1){
+            pict_tit=<div id="pic_tit">{this.state.pic_title[0]}</div>
+            pict=<a href="#"><img id="picts" alt="" src={require("../public/images/gal1.jpg")}></img></a>
+        }else if (this.props.index===2){
+            pict_tit=<div id="pic_tit">{this.state.pic_title[1]}</div>
+            pict=<a href="#"><img id="picts" alt="" src={require("../public/images/gal2.jpg")}></img></a>
+        }else if (this.props.index===3){
+            pict_tit=<div id="pic_tit">{this.state.pic_title[2]}</div>
+            pict=<a href="#"><img id="picts" alt="" src={require("../public/images/gal3.jpg")}></img></a>
+        }
 
         return (
             <div>
+                {pict_tit}
                 {pict}
             </div>
         );
