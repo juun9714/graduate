@@ -7,8 +7,8 @@ class Title extends Component {
         super(props);
 
         this.state = {
-            title: ["제 졸업 전시회에 오신 것을 환영합니다 :)", "GALLARY PAGE", "COMMENT PAGE"],
-            content: ["사진을 보시려면 Gallary, 편지를 남기시려면 Comment를 눌러주세요!", "HI GUYS this is the gallary page", "HI GUYS this is the comment page"]
+            title: ["Welcome to my Graduation Exhibition :)", "GALLARY PAGE", "COMMENT PAGE"],
+            content: ["Gallery for pictures and please leave the messages on Comment tab!", "", ""]
         }
     }
 
@@ -21,11 +21,13 @@ class Title extends Component {
         }
         else if (this.props.mode === "gallary") {
             _title=this.state.title[1]
-            _content=this.state.content[1]
+            // _content=this.state.content[1]
+            _content=null
         }
         else if (this.props.mode === "comment") {
             _title=this.state.title[2]
-            _content=this.state.content[2]
+            // _content=this.state.content[2]
+            _content=null
         }
 
         return (
