@@ -16,12 +16,12 @@ class Pict extends Component {
 
     render() {
 
-        function getPost(){
-            axios.get("localhost:8000").then(response=>{
-                console.log(response)
-            })
-        }
-        getPost()
+        // function getPost(){
+        //     axios.get("localhost:8000").then(response=>{
+        //         console.log(response)
+        //     })
+        // }
+        // getPost()
         var pict = null
         var pict_tit = null
         if (this.props.index === 1) {
