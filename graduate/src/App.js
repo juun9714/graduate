@@ -1,5 +1,5 @@
 import './App.css';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Title from './components/Title.js';
 import Main from './components/Main.js';
 import Gallary from './components/Gallary.js';
@@ -7,7 +7,7 @@ import Comment from './components/Comment.js';
 
 class App extends Component {
 
-  constructor(props) {
+  constructor(props) { 
     super(props);
     this.state = {
       mode: "main"

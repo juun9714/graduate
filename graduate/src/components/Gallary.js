@@ -1,7 +1,7 @@
 import '../App.css';
 import "../public/style_gall.css";
 import Pict from './Pict';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 class Gallary extends Component {
     constructor(props){

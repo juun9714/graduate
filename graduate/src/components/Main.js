@@ -1,6 +1,6 @@
 import '../App.css';
 import "../public/style_main.css";
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 class Main extends Component {
     render() {
