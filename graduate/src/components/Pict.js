@@ -1,4 +1,5 @@
 import '../App.css';
+import axios from 'axios'
 import "../public/style_pict.css";
 import React, { Component } from 'react';
 
@@ -15,6 +16,12 @@ class Pict extends Component {
 
     render() {
 
+        function getPost(){
+            axios.get("localhost:8000").then(response=>{
+                console.log(response)
+            })
+        }
+        getPost()
         var pict = null
         var pict_tit = null
         if (this.props.index === 1) {
